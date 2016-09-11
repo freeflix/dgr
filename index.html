@@ -1,7 +1,16 @@
-<style>
-body{
-    text-align: center;
-    background: #00ECB9;
+<html><head>
+    <meta charset="UTF-8">
+
+
+    <title>CodePen - Styled JavaScript Countdown Clock</title>
+    
+    
+    
+    
+        <style>
+      body{
+	text-align: center;
+	background: #00ECB9;
   font-family: sans-serif;
   font-weight: 100;
 }
@@ -14,58 +23,67 @@ h1{
 }
 
 #clockdiv{
-    font-family: sans-serif;
-    color: #fff;
-    display: inline-block;
-    font-weight: 100;
-    text-align: center;
-    font-size: 30px;
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
 }
 
 #clockdiv > div{
-    padding: 10px;
-    border-radius: 3px;
-    background: #00BF96;
-    display: inline-block;
+	padding: 10px;
+	border-radius: 3px;
+	background: #00BF96;
+	display: inline-block;
 }
 
 #clockdiv div > span{
-    padding: 15px;
-    border-radius: 3px;
-    background: #00816A;
-    display: inline-block;
+	padding: 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
 }
 
 .smalltext{
-    padding-top: 5px;
-    font-size: 16px;
+	padding-top: 5px;
+	font-size: 16px;
 }
-<style>
+    </style>
 
+    <script>
+  window.console = window.console || function(t) {};
+</script>
 
-<h1>Countdown Clock</h1>
+    
+    
+  </head>
+
+  <body translate="no">
+
+    <h1>Countdown Clock</h1>
 <div id="clockdiv">
   <div>
-    <span class="days"></span>
+    <span class="days">14</span>
     <div class="smalltext">Days</div>
   </div>
   <div>
-    <span class="hours"></span>
+    <span class="hours">23</span>
     <div class="smalltext">Hours</div>
   </div>
   <div>
-    <span class="minutes"></span>
+    <span class="minutes">52</span>
     <div class="smalltext">Minutes</div>
   </div>
   <div>
-    <span class="seconds"></span>
+    <span class="seconds">02</span>
     <div class="smalltext">Seconds</div>
   </div>
 </div>
+      <script src="//assets.codepen.io/assets/common/stopExecutionOnTimeout-53beeb1a007ec32040abaf4c9385ebfc.js"></script>
 
-<script src="//assets.codepen.io/assets/common/stopExecutionOnTimeout-53beeb1a007ec32040abaf4c9385ebfc.js"></script>
-
-<script>
+    
+        <script>
       function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
   var seconds = Math.floor((t / 1000) % 60);
@@ -109,3 +127,16 @@ var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv', deadline);
       //# sourceURL=pen.js
     </script>
+
+    
+    <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+    
+  
+
+ 
+</body></html>
